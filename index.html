@@ -1,0 +1,47 @@
+#window size increase and decrease through buttons
+
+
+//Create some functions here
+
+
+<script>
+
+var Diswindow;
+
+      function firstFunction(){
+           Diswindow = window.open("","", "width=100, height=100");
+}
+
+      function secondFunction(){
+           Diswindow.resizeTo(500, 650);          
+           Diswindow.focus();
+}
+
+      function thirdFunction(){
+           Diswindow.resizeBy(50, 50);
+           Diswindow.focus();
+}
+
+      function fourthFunction(){
+           Diswindow.resizeBy(-50,-50);
+           Diswindow.focus();
+}
+
+
+</script>
+
+
+
+// create buttons to size and resize the window
+
+
+<button type="button" onclick="firstFunction()">Open Window</button></br>
+<button type="button" onclick="secondFunction()">Resize the window</button></br>
+<button type="button" onclick="thirdFunction()">Increase the window size</button></br>
+<button type="button" onclick="fourthFunction()">Decrease the window size</button>
+
+
+
+
+//done.........
+
